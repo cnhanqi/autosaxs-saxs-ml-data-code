@@ -1,3 +1,0 @@
-﻿bundle_name,figure_output,generator_script,shared_plot_code,model_kind,model_input_csv,upstream_cleaning_script,upstream_original_table_csv,upstream_original_table_xlsx,raw_saxs_folder,note
-ci_gb,outputs\heatmaps\ci_gb\heatmap_ci_regression.png,scripts/generate_heatmap_ci_gb.py,src/visualization.py,GB,data\curated_descriptor_dataset_n96.csv,scripts/run_analysis.py,data\source_descriptor_table_v3_n99.csv,data\source_descriptor_table_v3_n99.csv,selected for ML,"Heatmap target is CI, with contour threshold at 0.1."
-

@@ -1,55 +1,70 @@
-# AutoSAXS SAXS Descriptor and ML Workflow
+# AutoSAXS Curated Minimal Public Release
 
-Curated public release package for the SAXS descriptor-extraction and machine-learning workflow used to analyse lysozyme/EAN crystallization behaviour.
+This repository contains a reduced public package for the SAXS descriptor-extraction and machine-learning workflow used to analyse lysozyme/EAN crystallization behaviour.
 
-This package is intentionally selective. It contains the processed descriptor tables, representative SAXS profiles, executable analysis code, model-evaluation outputs, and source data for the ML phase maps. It does not include the full local working directory, manuscript drafts, reviewer correspondence, PowerPoint files, or unrelated exploratory files.
+The release is intentionally minimal. It contains the curated descriptor table, a small representative subset of SAXS profiles, lightweight Bragg/CI/OLIGOMER helper code, model-metrics tables, and protocol notes needed for summary-level reproducibility review. It does not contain full raw working directories, figure-generation code, large OLIGOMER basis files, bulk figure outputs, legacy scripts, or one-command end-to-end reproduction pipelines.
 
-## Contents
+## Included Content
 
-- `data/`: curated descriptor and target tables. The primary table is `curated_descriptor_dataset_n96.csv`.
-- `selected_for_ML/`: representative SAXS `.dat` profiles used for the descriptor and ML workflow.
-- `src/saxs_crystal/physics/`: Bragg-peak detection, crystallinity-index, Guinier, and OLIGOMER command helpers.
-- `src/` and `scripts/`: data cleaning, model training/evaluation, heatmap generation, and publication-plot scripts.
-- `configs/`: default analysis and ML configuration files.
-- `outputs/model_evaluation/`: model metrics and representative evaluation plots.
-- `outputs/heatmap_source_data/`: source CSV files for CI/Rg phase-map and transition-region outputs.
-- `outputs/publication_metrics/`: model-performance summary CSV files.
-- `oligomer_basis/`: PDB/form-factor basis files used for the representative OLIGOMER workflow.
-- `example_oligomer_outputs/`: small example output set from the OLIGOMER fitting workflow.
-- `legacy_reference_scripts/`: non-executable text copies of selected legacy step scripts retained for provenance only. These are not the recommended runnable code path.
+- `data/curated_descriptor_dataset_n96.csv`
+  The primary curated descriptor dataset used for the manuscript analyses.
+- `selected_for_ML/`
+  Ten representative SAXS `.dat` profiles spanning buffer and EAN conditions.
+- `src/saxs_crystal/io/read_dat.py`
+  Minimal SAXS `.dat` reader helper.
+- `src/saxs_crystal/physics/bragg.py`
+  Lightweight Bragg-peak summary helper.
+- `src/saxs_crystal/physics/crystallinity.py`
+  Lightweight crystallinity-index helper.
+- `src/saxs_crystal/physics/oligomer.py`
+  Deterministic OLIGOMER command-wrapper helper without bundled ATSAS assets.
+- `outputs/model_evaluation/*/metrics.csv`
+  Task-level ML evaluation metrics.
+- `outputs/publication_metrics/*.csv`
+  Summary manuscript-facing performance tables.
+- `configs/ml.default.yaml`
+  Compact ML settings summary.
+- `ML_PROTOCOL.md`
+  Train/test split, random-seed, cross-validation, and metrics description.
+- `REPRESENTATIVE_SAXS_PROFILES.md`
+  List of the retained SAXS profiles.
+- `hyperparameter_tuning_description.md`
+  Hyperparameter-grid description.
+- `CITATION.cff`, `.zenodo.json`, `LICENSE`, `NOTICE.md`
+  Citation, DOI metadata, and reuse terms.
 
-## Primary Dataset
+## Not Included
 
-The primary curated descriptor table is:
+- figure-generation scripts or plotting modules
+- bulk PNG outputs and heatmap-rendering assets
+- full raw SAXS working directories
+- complete legacy scripts
+- OLIGOMER basis PDB/form-factor files
+- complete OLIGOMER example-output bundles
+- one-click full reproduction pipelines
+- Word, PowerPoint, Origin, Illustrator, and response-document files
 
-`data/curated_descriptor_dataset_n96.csv`
+## Representative Profiles
 
-It contains 96 curated samples after filtering/cleaning from the larger descriptor tables. Supporting source/provenance tables are provided as:
+The retained SAXS profiles are:
 
-- `data/source_descriptor_table_v3_n99.csv`
-- `data/source_descriptor_table_v2_n100.csv`
-- `data/curated_descriptor_dataset_rg_n99.csv`
-- `data/curated_descriptor_dataset_ci_n96.csv`
+- `Buf_2.5mg.dat`
+- `Buf_50mg.dat`
+- `Buf_100mg.dat`
+- `EAN1.5_50mg.dat`
+- `EAN5.7_5mg.dat`
+- `EAN12_50mg.dat`
+- `EAN30_75mg.dat`
+- `EAN54.6_25mgb.dat`
+- `EAN75_2.5mg.dat`
+- `EAN99_70mg.dat`
 
-## Reproducibility Notes
+## Reproducibility Scope
 
-The formal reusable implementation is in `src/` and `scripts/`. The Bragg and crystallinity-index logic is in `src/saxs_crystal/physics/bragg.py` and `src/saxs_crystal/physics/crystallinity.py`; the OLIGOMER command wrapper is in `src/saxs_crystal/physics/oligomer.py`.
+This curated minimal package is intended for method inspection and summary-level result checking. It is not a full rerun package for regenerating every intermediate table or figure from the original local workflow.
 
-ATSAS is required only for workflows that call FFMAKER/OLIGOMER. Install ATSAS separately and set the `ATSAS_BIN` environment variable if needed.
-
-## Suggested Setup
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-pip install -e .
-```
+ATSAS/OLIGOMER is third-party software and is not redistributed in this repository.
 
 ## Citation
 
-Please cite the associated manuscript and the archived release DOI once available. Citation metadata are provided in `CITATION.cff`.
-
-## License
-
-See `LICENSE` and `NOTICE.md`. The package is shared for peer-review, reproducibility, and non-commercial academic research use with attribution.
+Citation metadata are provided in `CITATION.cff`. The currently archived Zenodo DOI associated with this repository is `https://doi.org/10.5281/zenodo.20716687`.

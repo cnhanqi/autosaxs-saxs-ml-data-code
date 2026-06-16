@@ -1,6 +1,0 @@
-FF columns map (col1 = s)
-col 2 -> dimer.pdb
-col 3 -> hexamer.pdb
-col 4 -> monomer.pdb
-col 5 -> octamer.pdb
-col 6 -> tetramer.pdb
