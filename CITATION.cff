@@ -6,6 +6,7 @@ authors:
   - family-names: "Han"
     given-names: "Hank"
 repository-code: "https://github.com/cnhanqi/autosaxs-saxs-ml-data-code"
+doi: "10.5281/zenodo.20716687"
 version: "v1.0.2"
 date-released: "2026-06-16"
 keywords:

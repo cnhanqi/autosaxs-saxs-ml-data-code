@@ -6,7 +6,7 @@ The data and code supporting this article will be deposited in a public reposito
 
 ## After GitHub/Zenodo Release
 
-The data and code supporting this article are available at [repository name] at [full GitHub repository URL], with the archived version of record available at [full DOI URL]. The release includes the curated descriptor dataset (`n = 96`), supporting descriptor/source tables, representative SAXS profiles, Bragg-peak-detection and crystallinity-index scripts, an OLIGOMER wrapper, model-evaluation outputs, hyperparameter-grid description, random-seed and train/test split definitions in the scripts, and figure source data. The version of the code used for this study is [release tag, e.g. v1.0.0]. ATSAS/OLIGOMER is third-party software and is not redistributed.
+The data and code supporting this article are available at https://github.com/cnhanqi/autosaxs-saxs-ml-data-code, with the archived version of record available at https://doi.org/10.5281/zenodo.20716687. The release includes the curated descriptor dataset (`n = 96`), supporting descriptor/source tables, representative SAXS profiles, Bragg-peak-detection and crystallinity-index scripts, an OLIGOMER wrapper, model-evaluation outputs, hyperparameter-grid description, random-seed and train/test split definitions in the scripts, and figure source data. The version of the code used for this study is v1.0.2. ATSAS/OLIGOMER is third-party software and is not redistributed.
 
 ## Reviewer Response Text
 

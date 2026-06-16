@@ -6,7 +6,7 @@ GitHub repository: https://github.com/cnhanqi/autosaxs-saxs-ml-data-code
 
 The archived version of record will be available at:
 
-Zenodo DOI: [TO BE ADDED AFTER SUCCESSFUL ZENODO ARCHIVE]
+Zenodo DOI: https://doi.org/10.5281/zenodo.20716687
 
 The version of the code used for this study is:
 
