@@ -1,0 +1,17 @@
+FEATURE_COLUMNS = [
+    "sample_id",
+    "ean_wt_pct",
+    "protein_mg_ml",
+    "rg",
+    "rg_kind",
+    "i0",
+    "ci",
+    "peak_detected",
+    "q_peak",
+    "d_spacing",
+    "oligomer_chi2",
+    "oligomer_state",
+    "label_crystal",
+    "analysis_status",
+    "warnings",
+]

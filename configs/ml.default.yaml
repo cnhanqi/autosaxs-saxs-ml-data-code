@@ -1,0 +1,19 @@
+ml:
+  random_state: 42
+  regression_models:
+    - ridge
+    - random_forest
+    - gradient_boosting
+  classification_models:
+    - logistic_regression
+    - random_forest
+    - gradient_boosting
+  cv_folds: 5
+  metrics:
+    regression:
+      - r2
+      - rmse
+    classification:
+      - roc_auc
+      - f1
+      - accuracy

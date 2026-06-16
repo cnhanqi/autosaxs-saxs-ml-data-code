@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
+*.lnk
+*Zone.Identifier*
+
+# Generated runtime analysis outputs
+outputs/pipeline_runs/
+analysis*/
+fit/
+*.log
+
+# Large or private raw-data folders that should not be added accidentally
+archive/
+raw/

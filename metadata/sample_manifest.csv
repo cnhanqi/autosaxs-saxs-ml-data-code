@@ -1,0 +1,1 @@
+sample_id,legacy_sample_name,raw_file_path,sample_kind,protein_name,protein_batch,ean_wt_pct,protein_mg_ml,batch_id,replicate_id,experiment_id,collection_date,instrument,beamline,exposure_s,temperature_c,buffer_name,has_low_q_region,has_bragg_peak,has_pdb_model,pdb_model_id,include_in_physics,include_in_ml,label_crystal,label_source,notes

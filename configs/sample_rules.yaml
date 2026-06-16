@@ -1,0 +1,17 @@
+guinier:
+  require_low_q_points: 8
+  require_negative_slope: true
+
+crystallinity:
+  peak_prominence_threshold: 0.05
+  smooth_sigma: 2.0
+  min_real_peaks: 2
+
+oligomer:
+  require_pdb_model: true
+  require_atsas: true
+
+ml:
+  require_complete_features: true
+  min_samples_regression: 20
+  min_samples_classification: 30

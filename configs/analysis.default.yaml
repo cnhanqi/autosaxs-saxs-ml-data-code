@@ -1,0 +1,22 @@
+guinier:
+  q_min: 0.02
+  q_max: 0.05
+  require_low_q_points: 8
+  require_negative_slope: true
+
+crystallinity:
+  q_min: 0.02
+  q_max: 0.35
+  smooth_sigma: 2.0
+  peak_prominence_threshold: 0.05
+  min_real_peaks: 2
+
+bragg:
+  peak_search_q_min: 0.02
+  peak_search_q_max: 0.35
+
+oligomer:
+  s_min: 0.01
+  s_max: 0.30
+  require_pdb_model: true
+  require_atsas: true

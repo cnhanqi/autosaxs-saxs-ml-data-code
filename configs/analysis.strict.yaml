@@ -1,0 +1,28 @@
+guinier:
+  q_min: 0.02
+  q_max: 0.05
+  require_low_q_points: 10
+  require_negative_slope: true
+  min_weighted_r2: 0.95
+
+crystallinity:
+  q_min: 0.02
+  q_max: 0.35
+  smooth_sigma: 2.5
+  peak_prominence_threshold: 0.08
+  min_real_peaks: 2
+  min_ci: 0.02
+
+bragg:
+  peak_search_q_min: 0.02
+  peak_search_q_max: 0.35
+  min_snr_peak1: 3.0
+
+oligomer:
+  s_min: 0.01
+  s_max: 0.30
+  require_pdb_model: true
+  require_atsas: true
+  keep_fit_classes:
+    - OK
+    - Borderline
