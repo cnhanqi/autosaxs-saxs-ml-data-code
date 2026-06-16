@@ -5,9 +5,8 @@ type: dataset
 authors:
   - family-names: "Han"
     given-names: "Hank"
-repository-code: "TO BE ADDED"
-doi: "TO BE ADDED"
-version: "v1.0.0"
+repository-code: "https://github.com/cnhanqi/autosaxs-saxs-ml-data-code"
+version: "v1.0.2"
 date-released: "2026-06-16"
 keywords:
   - SAXS
@@ -16,4 +15,3 @@ keywords:
   - ionic liquid
   - machine learning
   - crystallinity index
-license: "custom-non-commercial-academic"

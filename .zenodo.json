@@ -1,0 +1,27 @@
+{
+  "title": "AutoSAXS SAXS descriptor and machine-learning workflow",
+  "upload_type": "dataset",
+  "description": "Curated data and code release for a SAXS descriptor-extraction and machine-learning workflow for lysozyme/EAN crystallization. The release includes the curated descriptor dataset (n = 96), representative SAXS profiles, Bragg-peak-detection and crystallinity-index scripts, an OLIGOMER command wrapper, model-evaluation outputs, hyperparameter-grid description, random-seed and train/test split definitions in the scripts, and figure source data. ATSAS/OLIGOMER is third-party software and is not redistributed.",
+  "creators": [
+    {
+      "name": "Han, Hank"
+    }
+  ],
+  "keywords": [
+    "SAXS",
+    "crystallization",
+    "lysozyme",
+    "ionic liquid",
+    "machine learning",
+    "crystallinity index"
+  ],
+  "access_right": "open",
+  "license": "cc-by-nc-4.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/cnhanqi/autosaxs-saxs-ml-data-code",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
